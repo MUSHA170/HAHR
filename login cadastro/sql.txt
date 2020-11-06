@@ -1,0 +1,16 @@
+create database fullgas;
+
+use fullgas;
+
+create table clientes(
+	id_cliente int auto_increment primary key,
+	nome varchar(50),
+	email varchar(40),
+	senha varchar(32),
+	cidade varchar(30),
+	estado varchar(2),
+	endereço varchar(50),
+	numero int(10),
+	telefone int(30)
+	
+);

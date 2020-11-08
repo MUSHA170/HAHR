@@ -18,20 +18,20 @@
     $usuario_email = $_POST["email"];
     $usuario_senha = $_POST["senha"];
     $usuario_endereco = $_POST["endereco"];
-    $usuario_numero = $_POST["numero"];
+    $usuario_complemento = $_POST["complemento"];
     $usuario_telefone = $_POST["telefone"];
     $usuario_cidade = $_POST["cidade"];
     $usuario_estado = $_POST["estado"];
 
 
      //1° jeito
-$res = $pdo->prepare("INSERT INTO clientes(nome, email, senha, endereco, numero, telefone, cidade, estado) VALUES (:n, :e, :s, :d, :m, :l, :c, :t)" );
+$res = $pdo->prepare("INSERT INTO clientes(nome, email, senha, endereco, complemento, telefone, cidade, estado) VALUES (:n, :e, :s, :d, :m, :l, :c, :t)" );
 
 $res->bindValue(":n",$usuario_nome);
 $res->bindValue(":e",$usuario_email);
 $res->bindValue(":s",$usuario_senha);
 $res->bindValue(":d",$usuario_endereco);
-$res->bindValue(":m",$usuario_numero);
+$res->bindValue(":m",$usuario_complemento);
 $res->bindValue(":l",$usuario_telefone);
 $res->bindValue(":c",$usuario_cidade);
 $res->bindValue(":t",$usuario_estado);

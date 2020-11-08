@@ -6,19 +6,21 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <div class="conteudo">
-        <h1>CADASTRAR</h1>
-        <input type="text" placeholder="Nome Completo" id="">
-        <input type="email" placeholder="Email" id="">
-        <input type="password" placeholder="Senha" id="">
-        <input type="text" placeholder="Endereço" id="">
-        <input type="number" placeholder="Numero da residencia" id="">
-        <input type="text" placeholder="Cidade" id="">
-        <input type="text" placeholder="Estado" id="">
-        <input type="tel" placeholder="Telefone" id="">
-        <input type="submit" value="CADASTRAR">
-        <a href="login.html"> Ja cadastrado?<strong>Clique para login </strong></a>
-        
-    </div>
+    <form action="BD_Cadastro.php" method="post">
+        <div class="conteudo">
+            <h1>CADASTRAR</h1>
+            <input type="text" placeholder="Nome Completo" name="nome">
+            <input type="email" placeholder="Email" name="email">
+            <input type="password" placeholder="Senha" name="senha">
+            <input type="text" placeholder="Endereço" name="endereco">
+            <input type="text" placeholder="Complemento" name="numero">
+            <input type="text" placeholder="Cidade" name="cidade">
+            <input type="text" placeholder="Estado" name="estado">
+            <input type="tel" placeholder="Telefone" name="telefone">
+            <input type="submit" value="CADASTRAR">
+            <a href="login.html"> Ja cadastrado?<strong>Clique para login </strong></a>
+            
+        </div>
+    </form>
 </body>
 </html>

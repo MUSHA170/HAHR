@@ -24,6 +24,16 @@
     align-items: center;
     justify-content: center;
     border-bottom:7px solid #250083;
+
+}
+.box {
+    background-color: rgb(52, 153, 211);
+    display: block;
+    border: 1px solid #010180;
+    position: absolute;
+    top: 300px;
+
+    width:100%;
 }
 
 ul {

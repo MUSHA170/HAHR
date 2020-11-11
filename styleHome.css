@@ -4,14 +4,9 @@
     box-shadow: 7px 22px 66px -10px rgba(0,0,0,0.75);
 }
 
-
 .logo{
     border-radius: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 200px;
-    position: relative;
     box-shadow: 0px 0px 24px 8px rgba(124,129,237,1);
 }
 .header{
@@ -23,11 +18,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom:7px solid #250083;
+    border-top:7px solid #250083;
+    border-bottom:7px solid s#250083;
 }
 
 ul {
     text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 5px 0 5px 0;
+   /*  border: 1px solid #333; */
+    /* height: 100%; */
+    /* line-height: 45px; */
+   /*  cursor: pointer; */
+    /* margin-left: -6px; */
+    /* width: 100px; */
+    /* transition: 1s; */
+
 }
 
 .menu-horizontal {
@@ -41,21 +50,6 @@ ul {
     justify-content: center; */
 }
 
-/* li:hover {
-    background-color: #000080;
-} */
-li {
-    display: inline-block;
-    margin: 5px 0 5px 0;
-   /*  border: 1px solid #333; */
-    /* height: 100%; */
-    /* line-height: 45px; */
-   /*  cursor: pointer; */
-    /* margin-left: -6px; */
-    /* width: 100px; */
-    /* transition: 1s; */
-
-}
 .img05{
     width: 20%;
     height: 20%;
@@ -70,6 +64,12 @@ li {
     padding-bottom: 40px;
     background-color: rgb(12, 86, 129);
     font-size: 20pt;
+}
+
+.outline{
+    padding: 5px;
+    border:4mm ridge rgba(255, 255, 255, 1);
+    border-right-style: none
 }
 
 
@@ -91,20 +91,29 @@ li {
     margin-top: 30px;
 }
 
+.txt{
+    margin-right: 50px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
 .content{
-    background-color: darkseagreen;
     width: auto;
-    height: 500px;
+    height: 600px;
+    background-image: url("imagens/10.png");
+    background-position: center;
+    background-size: contain; 
+    background-repeat: no-repeat;
 }
 
 
 .rodape{
     display: flex;
-    align-items: flex-end;
+    justify-content:space-around; 
     margin-top: 20px;
     padding-top: 15px;
     width: auto;
-
     background-color: rgb(255, 255, 255);
     border-top:5px solid #9170E4;
 }

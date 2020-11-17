@@ -22,7 +22,7 @@ $sql ="SELECT COUNT(*) as num FROM clientes WHERE email=:e AND senha=:s";
 
     $linhas = $c->fetch(PDO::FETCH_ASSOC);
     if ($linhas['num'] > 0)  {
-        header ("Location: logado.html");
+        header ("Location: produtos.html");
     }else{
         echo"erro";
     }

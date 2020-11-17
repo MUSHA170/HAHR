@@ -37,6 +37,7 @@ $res->bindValue(":c",$usuario_cidade);
 $res->bindValue(":t",$usuario_estado);
 $res->execute();
 
+header ("Location: login.html");
 /* //2° jeito
 $pdo->query("INSERT INTO clientes(nome, email, senha) VALUES ($usuario_nome, $usuario_email, $usuario_senha)"); */
 

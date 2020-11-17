@@ -42,8 +42,16 @@
             
             <div class="box">
                 <h3 class="produto_nome">P/13 CARGA</h3>
+                <h3 class="produto_nome">P/13 CARGA</h3>
+                <h3 class="produto_nome">P/13 CARGA</h3>
             </div>
             <div class="box">
+                <div class="produto">
+                    <img class="img" src="imagens/produtos/prata2.png" alt="">
+                </div>
+                <div class="produto">
+                    <img class="img" src="imagens/produtos/prata2.png" alt="">
+                </div>
                 <div class="produto">
                     <img class="img" src="imagens/produtos/prata2.png" alt="">
                 </div>
@@ -52,29 +60,73 @@
                 <div class="box_descricao">
                     <p class="descrição" >Lorem ipsum dolor sit amet, consectetur</p>                
                 </div>
+                <div class="box_descricao">
+                    <p class="descrição" >Lorem ipsum dolor sit amet, consectetur</p>                
+                </div>
+                <div class="box_descricao">
+                    <p class="descrição" >Lorem ipsum dolor sit amet, consectetur</p>                
+                </div>
             </div>
 
             <div class="box">
-                <div class="btn_comprar">
-                    <button onclick="abrir()" class="btn btn-primary btn-lg">COMPRAR</button>
-                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                    <select class="form-control" id="produto1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                    <select class="form-control" id="produto2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                    <select class="form-control" id="produto3">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
             </div>
             
+            <div class="carrinho-btn">
+            <button onclick="abrir()" class="btn btn-primary btn-lg">COMPRAR</button>
+            </div>
+
             <!-- CARRINHO -->
             <div class="carrinho" id="popup">
                 <button onclick="fechar()">FECHAR</button>
                 <div class="container">
-                    
+                    <form action="login.php" method="post">
+                        <div class="conteudo">
+                            <div>
+                                <h1>ENTRAR</h1>
+                                <input type="email" placeholder="Email" name="email">
+                                <input type="password" placeholder="Senha" name="senha">
+                                <input type="submit" value="ACESSAR">
+                                <a href="cadastro.html"> Não é cadastrado?<strong>Clique para Cadastrar </strong></a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-
-
-
-                          <!-- Rodape -->
-                <div class="rodape">
-                    <p>...E em breve também na nos celulares. Estamos trabalhando duro no desenvolvimento.</p>
-                    <p>@2020 semdominio.com | Designed by : Airton and Victoria</p> 
-                </div>
+                        <!-- Rodape -->
+            <div class="rodape">
+                <p>...E em breve também na nos celulares. Estamos trabalhando duro no desenvolvimento.</p>
+                <p>@2020 semdominio.com | Designed by : Airton and Victoria</p> 
+            </div>
         </div>
     </body>
 </html>

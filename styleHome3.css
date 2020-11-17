@@ -111,7 +111,58 @@ li {
     border-top:5px solid #9170E4;
 }
 
-                        /* LOGIN */
+/* LOGIN */
+h1{ /* texto "entrar" */
+    text-align: center;
+    color: #023E8A;
+    font-family: Arial,sans-serif;
+    text-shadow: 2px 2px 0 #278ac4, 4px 4px 0 #4da5e0;
+}
+                        
+input{ /* Caixa de texto */
+    margin: 0 10px 0 0;
+    display: block;/* Caixa de texto um em cima do outro */
+    width: 400px;
+    height: 55px;
+    border-radius: 30px; /* borda arredondada */
+    border: 1px solid black; /* bordas */
+    font-size: 16pt;
+    outline: 0;/* tirar borda quando clicado */
+    text-align: center;
+    background-color: rgba( 0, 0, 0, .1);/*Fundo semi-tranparente */
+}
+
+/*          cor do placehoder       */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(0, 0, 0);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(0, 0, 0);
+}
+
+input[type=submit]{
+    background-color: #0077B6;
+    
+}
+
+strong:hover{
+    
+    text-decoration: underline;
+}
+
+a{  /* link */
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+
 .popup{  
     position: fixed;
     height: 90%;
@@ -130,53 +181,4 @@ li {
 .conteudo{
     display: flex;
     justify-content: center;
-}
-h1{ /* texto "entrar" */
-    text-align: center;
-    color: #023E8A;
-    font-family: Arial,sans-serif;
-    text-shadow: 2px 2px 0 #278ac4, 4px 4px 0 #4da5e0;
-}
-
-input{ /* Caixa de texto */
-    margin: 0 10px 0 0;
-    display: block;/* Caixa de texto um em cima do outro */
-    width: 400px;
-    height: 55px;
-    border-radius: 30px; /* borda arredondada */
-    border: 1px solid black; /* bordas */
-    font-size: 16pt;
-    outline: 0;/* tirar borda quando clicado */
-    text-align: center;
-    background-color: rgba( 0, 0, 0, .1);/*Fundo semi-tranparente */
-}
-
-/*          cor do placehoder       */
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(0, 0, 0);
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgb(0, 0, 0);
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgb(0, 0, 0);
-  }
-
-input[type=submit]{
-    background-color: #0077B6;
-    
-}
-
-strong:hover{
-    
-    text-decoration: underline;
-}
-
-a{  /* link */
-    text-decoration: none;
-    display: block;
-    text-align: center;
 }

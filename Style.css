@@ -6,7 +6,7 @@
 body{
     
     background-image: url("Background.png");/* Plano de fundo */
-    background-color: #00B4D8;
+    background-color: #250083;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -18,7 +18,7 @@ body{
 }
 h1{ /* texto "entrar" */
     text-align: center;
-    color: #023E8A;
+    color: white;
     font-family: Arial,sans-serif;
 }
 input{ /* Caixa de texto */
@@ -27,7 +27,7 @@ input{ /* Caixa de texto */
     height: 55px;
     margin: 10px;
     border-radius: 30px; /* borda arredondada */
-    border: 1px solid black; /* bordas */
+    border: 1px solid white; /* bordas */
     font-size: 16pt;
     outline: 0;/* tirar borda quando clicado */
     text-align: center;
@@ -37,31 +37,34 @@ input{ /* Caixa de texto */
 
 /*          cor do placehoder       */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(0, 0, 0);
+    color: white;
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgb(0, 0, 0);
+    color: white;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgb(0, 0, 0);
+    color: white;
   }
 
 input[type=submit]{
-    background-color: #0077B6;
+    background-color: white;
+	color: #250083;
     
 }
 
 input[type=submit]:hover{
     width: 405px;
     height: 60px;
+	color: #250083;
+
     
 }
 
 a{  /* link */
-    color: #000000;
+    color: white;
     text-decoration: none;
     display: block;
     text-align: center;

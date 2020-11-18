@@ -5,16 +5,28 @@
 }
 
 .logo{
-    border-radius: 100%;
-    width: 200px;
-    box-shadow: 0px 0px 24px 8px rgba(124,129,237,1);
+	height: 180px;
+    width: 180px;
+
 }
 .header{
+	background-image: linear-gradient(180deg,#000,transparent);
     background-color: rgb(37, 67, 122);
-    background-image: url("imagens/4.jpeg");
     background-position: center;
     background-size: contain; 
-    height: 300px;
+    height: 200px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    border-top:7px solid #250083;
+    border-bottom:7px solid s#250083;
+}
+.familia{
+    background-color: rgb(37, 67, 122);
+    background-image: url("imagens/familia.jpeg");
+    background-position: center;
+    background-size: contain; 
+    height: 765px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,11 +36,13 @@
 
 ul {
     text-align: center;
+	
 }
 
 li {
     display: inline-block;
-    margin: 5px 0 5px 0;
+    margin: 50px 0 50px 0;
+
    /*  border: 1px solid #333; */
     /* height: 100%; */
     /* line-height: 45px; */
@@ -58,7 +72,7 @@ li {
 
 .apres{
     color:white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
     padding-top: 35px;
     padding-left: 20px;
     padding-bottom: 40px;
@@ -67,8 +81,8 @@ li {
 }
 
 .outline{
-    padding: 5px;
-    border:4mm ridge rgba(255, 255, 255, 1);
+    padding: 2px;
+    border:1mm ridge rgba(255, 255, 255, 1);
     border-right-style: none
 }
 

@@ -97,17 +97,42 @@ li {
     top: 0; bottom: 0;
     left: 0; right: 0;
     display: none;
-    padding: 20px;
+    padding: 10px;
     background-color: #00B4D8;
     box-shadow: 0px 0px 35px 6px rgba(0,0,0,0.75);
     border: 5px solid;
     border-color: #023E8A;
 }
 
-.container{
-    height: 100px;
-    width: 100px;
+.carrinho-form{
+    display: block;
+/*     align-items: initial ; */
+}
+
+.header-carrinho{
+    width: 100%;
+    background-color: #82eead;
     display: flex;
-    justify-content: center;
-    background-color: black;
+    justify-content:space-between; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 5px 10px 5px;
+}
+
+.hc{
+    margin-right: 5px;
+}
+.li-form{
+    background-color: #ffffff;
+}
+
+.form-produto{
+    display: flex;
+    justify-content:space-between;
+    background-color: #ffffff;
+    border-bottom: solid 1px #000A4B;
+}
+
+.login{
+    align-self: flex-end;
 }

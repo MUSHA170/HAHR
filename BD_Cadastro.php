@@ -25,16 +25,16 @@
 
 
      //1° jeito
-$res = $pdo->prepare("INSERT INTO clientes(nome, email, senha, endereco, complemento, telefone, cidade, estado) VALUES (:n, :e, :s, :d, :m, :l, :c, :t)" );
+$res = $pdo->prepare("INSERT INTO clientes(nome, email, senha, endereco, complemento, telefone, cidade, estado) VALUES (:bvNome, :bvEmail, :bvSenha, :bvEndereco, :bvComplemento, :bvTelefone, :bvCidade, :bvEstado)" );
 
-$res->bindValue(":n",$usuario_nome);
-$res->bindValue(":e",$usuario_email);
-$res->bindValue(":s",$usuario_senha);
-$res->bindValue(":d",$usuario_endereco);
-$res->bindValue(":m",$usuario_complemento);
-$res->bindValue(":l",$usuario_telefone);
-$res->bindValue(":c",$usuario_cidade);
-$res->bindValue(":t",$usuario_estado);
+$res->bindValue(":bvEmail",$usuario_email);
+$res->bindValue(":bvNome",$usuario_nome);
+$res->bindValue(":bvSenha",$usuario_senha);
+$res->bindValue(":bvEndereco",$usuario_endereco);
+$res->bindValue(":bvComplemento",$usuario_complemento);
+$res->bindValue(":bvTelefone",$usuario_telefone);
+$res->bindValue(":bvCidade",$usuario_cidade);
+$res->bindValue(":bvEstado",$usuario_estado);
 $res->execute();
 
 header ("Location: login.html");

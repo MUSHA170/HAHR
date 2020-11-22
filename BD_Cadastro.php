@@ -23,6 +23,7 @@
     $usuario_cidade = $_POST["cidade"];
     $usuario_estado = $_POST["estado"];
 
+    
 
      //1° jeito
 $res = $pdo->prepare("INSERT INTO clientes(nome, email, senha, endereco, complemento, telefone, cidade, estado) VALUES (:bvNome, :bvEmail, :bvSenha, :bvEndereco, :bvComplemento, :bvTelefone, :bvCidade, :bvEstado)" );

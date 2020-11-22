@@ -54,11 +54,14 @@
                     <li><a class="btn btn-outline-primary" href="cadastro.html">CADASTRAR</a></li>
                 </ul>
             </div>
+
+            <!-- TOTAL -->
+            <br>TOTAL <div id="total">0</div> <button  class="btn btn-warning" onclick="atualiza()">ATUALIZA TOTAL</button><br><br><br>
             
             <div class="box">
-                <h3 class="produto_nome" >butijao1</h3>
-                <h3 class="produto_nome" >butijao2</h3>
-                <h3 class="produto_nome" >butijao3</h3>
+                <h3 class="produto_nome" >P13</h3>
+                <h3 class="produto_nome" >P20</h3>
+                <h3 class="produto_nome" >P45</h3>
             </div>
             <div class="box">
                 <div class="produto">
@@ -83,87 +86,137 @@
                 </div>
             </div>
 
-            <div class="box">
-                <div class="col-1">
-
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">QUANTIDADE</label>
-                            <select name="produto1" class="form-control" id="produto1">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
+            <!-- QUANTIDADE -->
+            <form action="enviar.php" method="post">
+                    <div class="box">
+                        <!-- PRODUTO1 -->
+                        <div class="col-1">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                                    <select name="p13" class="form-control" id="produto1">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <!-- PRODUTO2 -->
+                        <div class="col-1">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                                    <select name="p20" class="form-control" id="produto2">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <!-- PRODUTO3 -->
+                        <div class="col-1">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                                    <select name="p45" class="form-control" id="produto3">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                            </div>
+                        </div>
                     </div>
-        
-                </div>
-                <div class="col-1">
 
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">QUANTIDADE</label>
-                            <select name="produto1" class="form-control" id="produto2">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                    </div>
-        
-                </div>
-                <div class="col-1">
-
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">QUANTIDADE</label>
-                            <select name="produto1" class="form-control" id="produto3">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                    </div>
-        
-                </div>
-            </div>
-        
-            <!-- TOTAL -->
-            <br>TOTAL <div id="total">00</div> <button onclick="atualiza()">ATUALIZA TOTAL</button><br><br><br>
-
-            <div class="carrinho-btn">
-            <button onclick="abrir()" class="btn btn-primary btn-lg">COMPRAR</button>
-            </div>
-
-            <!-- CARRINHO -->
-            <div class="carrinho" id="popup">
-                <button onclick="fechar()">FECHAR</button>
-                    <form action="" method="post">
-                                <div class="carrinho-form" id="carrinho-form">
-                                    <div class="header-carrinho">
-                                        <div class="hc">PRODUTO</div>
-                                        <div class="hc">QUANTIDADE</div>
-                                        <div class="hc">PREÇO</div>
-                                    </div>
-                                    <div class="form-produto">
-                                        <div class="hc li-form">butijao 1</div>
-                                        <div class="hc li-form"> <input type="number" name="qt-pdt-1" min="0" max="9" value="0"></div>
-                                        <div class="hc li-form"  >60R$</div>
-                                    </div>
-                                    <div class="form-produto">
-                                        <div class="hc li-form">butijao 2</div>
-                                        <div class="hc li-form"> <input type="number" name="qt-pdt-2" min="0" max="9" value="0"></div>
-                                        <div class="hc li-form">70R$</div>
-                                    </div>
-                                    <div class="form-produto">
-                                        <div class="hc li-form">butijao 3</div>
-                                        <div class="hc li-form"> <input type="number" name="qt-pdt-3" min="0" max="9" value="0"></div>
-                                        <div class="hc li-form">80R$</div>
-                                    </div>
-
-                                    
-
-                                    <div>horas</div>
+            
+                    
+                    <!-- form cadastro -->
+                    <div class="formulario">
+                        <form>
+                            <!-- linha nome e email -->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nome</label>
+                                    <input type="text" class="form-control" placeholder="Nome Completo" name="nome">
                                 </div>
-                    </form>
-            </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Email</label>
+                                    <input type="email" class="form-control"  placeholder="email@mail.com" name="email">
+                                </div>
+                            </div>
+                            <!-- endereco -->
+                            <div class="form-row">
+                                <div class="form-group col-md-9">
+                                    <label for="inputAddress">Endereço de Residencia</label>
+                                    <input type="text" class="form-control" placeholder="Rua" name="endereco">
+                                </div>
+                            </div>
+                            <!-- cidade estado n residencia e telefone -->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">Cidade</label>
+                                    <input type="text" class="form-control" name="cidade">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputState">Estado</label>
+                                    <select id="inputState" class="form-control" name="estado">
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP" selected>São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                        <option value="EX">Estrangeiro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Número Residencia</label>
+                                    <input type="text" class="form-control" placeholder="123" name="numero">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Tefone</label>
+                                    <input type="text" class="form-control" placeholder="(13)91234-5678" name="telefone">
+                                </div>
+                            </div>
+
+                            <!-- forma de pagamento -->
+                            <label for="inputZip">Forma de pagamento (EM BREVE)</label>
+                            <div class="form-row">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customRadioDisabled">Cartão </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customRadioDisabled">Boleto</label>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">ENVIAR</button>
+                        </form>
+
+                    </div>
+                </form>   
             
                         <!-- Rodape -->
             <div class="rodape">

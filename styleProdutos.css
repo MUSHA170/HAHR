@@ -29,7 +29,7 @@ li {
 }
 
 .menu-horizontal {
-    position: sticky;
+/*     position: sticky; */
     top: 3px;
     width: auto;
     background-color: rgba(255, 255, 255, 0.95);
@@ -88,51 +88,9 @@ li {
 }
 
 
-/* carrinho */
-.carrinho{
-    position: fixed;
-    height: 90%;
-    width: 90%;
-    margin: auto;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    display: none;
-    padding: 10px;
-    background-color: #00B4D8;
-    box-shadow: 0px 0px 35px 6px rgba(0,0,0,0.75);
-    border: 5px solid;
-    border-color: #023E8A;
-}
 
-.carrinho-form{
-    display: block;
-/*     align-items: initial ; */
-}
-
-.header-carrinho{
-    width: 100%;
-    background-color: #82eead;
-    display: flex;
-    justify-content:space-between; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: 10px 5px 10px 5px;
-}
-
-.hc{
-    margin-right: 5px;
-}
-.li-form{
-    background-color: #ffffff;
-}
-
-.form-produto{
-    display: flex;
-    justify-content:space-between;
-    background-color: #ffffff;
-    border-bottom: solid 1px #000A4B;
-}
-
-.login{
-    align-self: flex-end;
+/* FORMULARIO */
+.formulario{
+    margin: 5px 15px 15px 15px;
+    border-top: solid black;
 }

@@ -14,6 +14,7 @@
     $usuario_nome = $_POST["nome"];
     $usuario_email = $_POST["email"];
     $usuario_endereco = $_POST["endereco"];
+    $usuario_bairro = $_POST["bairro"];
     $usuario_cidade = $_POST["cidade"];
     $usuario_estado = $_POST["estado"];
     $usuario_numero = $_POST["numero"];
@@ -36,20 +37,21 @@
     $dia = date("j M o");
 
     /* Verifica se todo os dados foram preenchidos */
-    if ($usuario_nome == null || $usuario_email == null || $usuario_endereco == null || $usuario_cidade == null || $usuario_estado == null || $usuario_numero == null || $usuario_telefone == null) {
+    if ($usuario_nome == null || $usuario_email == null || $usuario_endereco == null || $usuario_bairro == null || $usuario_cidade == null || $usuario_estado == null || $usuario_numero == null || $usuario_telefone == null) {
         # code...
         echo("preencha todos os dados");
     }else {
         /* verifica se o user escolheu pelo menos 1 produto */
         if ($total > 0) {
             /* enviar para o bd */ 
-            $enviar = $pdo->prepare("INSERT INTO pedidos(nome, email, cidade, estado, endereço,	numero,	telefone, p13, p20,	p45, total,	horas, dia	) VALUES 
-            (:bvNome, :bvEmail, :bvCidade, :bvEstado, :bvEndereco, :bvNumero, :bvTelefone, :bvP13, :bvP20, :bvP45, :bvTotal, :bvHora, :bvDia)" );
+            $enviar = $pdo->prepare("INSERT INTO pedidos(nome, email, cidade, estado, endereço, bairro,	numero,	telefone, p13, p20,	p45, total,	horas, dia	) VALUES 
+            (:bvNome, :bvEmail, :bvCidade, :bvEstado, :bvEndereco, :bvBairro, :bvNumero, :bvTelefone, :bvP13, :bvP20, :bvP45, :bvTotal, :bvHora, :bvDia)" );
             $enviar->bindValue(":bvNome",$usuario_nome);
             $enviar->bindValue(":bvEmail",$usuario_email);
             $enviar->bindValue(":bvCidade",$usuario_cidade);
             $enviar->bindValue(":bvEstado",$usuario_estado);
             $enviar->bindValue(":bvEndereco",$usuario_endereco);
+            $enviar->bindValue(":bvbairro",$usuario_bairro);
             $enviar->bindValue(":bvNumero",$usuario_numero);
             $enviar->bindValue(":bvTelefone",$usuario_telefone);
 

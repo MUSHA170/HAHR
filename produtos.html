@@ -14,15 +14,6 @@
 
  
       <script>
-            function abrir() {
-                document.getElementById('popup').style.display = 'block';
-            }
-
-            function fechar() {
-              document.getElementById('popup').style.display = 'none';
-            }
-
-
             function atualiza() {
                 var p1 = document.getElementById("produto1");
                 var quantp1 = parseInt(p1.value);
@@ -31,102 +22,116 @@
                 var p3 = document.getElementById("produto3");
                 var quantp3 = parseInt(p3.value);
                 
-                var totalatualizado = (quantp1 * 60) + (quantp2 * 70) + (quantp3 * 80);
-                var total = document.getElementById('total');
+                var totalatualizado = (quantp1 * 69.98) + (quantp2 * 128) + (quantp3 *  289);
+                totalatualizado =  parseFloat(totalatualizado.toFixed(2))
                 document.getElementById('total').innerHTML = totalatualizado; 
             }
       </script>
     
+    <style></style>
     </head>
     <body>
+        <div class="popup">
+            Visite  pagina de <a href="adm.php" class="alert-link">pagina de pedidos</a>. Give it a click if you like.
+        </div>
         <div class="tudo">
-
-			<div class="header">	
-                <img class="logo" src="imagens/fullgas.png" alt="Logotipo">
-            </div>
-
-            <div class="menu-horizontal">
-                <ul>
-                    <li><a class="btn btn-outline-primary" href="home.html">HOME</a></li>
-                    <li><a class="btn btn-outline-primary" href="infos.html">INFOS</a></li>
-                    <li><a class="btn btn-outline-primary" href="contato.html">CONTATO</a></li>
-                    <li><a class="btn btn-outline-primary" href="login.html">ENTRAR</a></li>
-                    <li><a class="btn btn-outline-primary" href="cadastro.html">CADASTRAR</a></li>
+            <div class="header">
+                <img class="logo" src="imagens/fullgassemfundo.png" alt="Logotipo">
+				
+			    <ul>
+                    <li><a class="btn btn-outline-primary btn-lg" href="produtos.html">COMPRAR</a></li>
+                    <li><a class="btn btn-outline-primary btn-lg" href="contato.html">CONTATO</a></li>
                 </ul>
             </div>
 
-            <!-- TOTAL -->
-            <br>TOTAL <div id="total">0</div> <button  class="btn btn-warning" onclick="atualiza()">ATUALIZA TOTAL</button><br><br><br>
-            
-            <div class="box">
-                <h3 class="produto_nome" >P13</h3>
-                <h3 class="produto_nome" >P20</h3>
-                <h3 class="produto_nome" >P45</h3>
-            </div>
-            <div class="box">
-                <div class="produto">
-                    <img class="img" src="imagens/produtos/prata2.png" alt="">
-                </div>
-                <div class="produto">
-                    <img class="img" src="imagens/produtos/prata2.png" alt="">
-                </div>
-                <div class="produto">
-                    <img class="img" src="imagens/produtos/prata2.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <div class="box_descricao">
-                    <p class="descrição" >Lorem ipsum dolor sit amet, consectetur</p>                
-                </div>
-                <div class="box_descricao">
-                    <p class="descrição" >Lorem ipsum dolor sit amet, consectetur</p>                
-                </div>
-                <div class="box_descricao">
-                    <p class="descrição" >Lorem ipsum dolor sit amet, consectetur</p>                
-                </div>
-            </div>
+            <div class="vitrine">
 
-            <!-- QUANTIDADE -->
-            <form action="enviar.php" method="post">
-                    <div class="box">
-                        <!-- PRODUTO1 -->
-                        <div class="col-1">
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">QUANTIDADE</label>
-                                    <select name="p13" class="form-control" id="produto1">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                            </div>
-                        </div>
-                        <!-- PRODUTO2 -->
-                        <div class="col-1">
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">QUANTIDADE</label>
-                                    <select name="p20" class="form-control" id="produto2">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                            </div>
-                        </div>
-                        <!-- PRODUTO3 -->
-                        <div class="col-1">
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">QUANTIDADE</label>
-                                    <select name="p45" class="form-control" id="produto3">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                            </div>
-                        </div>
+                <div class="box">
+                    <h3 class="produto_nome" >P13</h3>
+                    <h3 class="produto_nome" >P20</h3>
+                    <h3 class="produto_nome" >P45</h3>
+                </div>
+                <div class="box">
+                    <div class="produto">
+                        <img class="img" src="imagens/produtos/prata2.png" alt="">
                     </div>
+                    <div class="produto">
+                        <img class="img" src="imagens/produtos/p20.png" alt="">
+                    </div>
+                    <div class="produto">
+                        <img class="img" src="imagens/produtos/comprido.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_descricao">
+                        <p class="descrição" >O botijão de 13 quilos é o mais utilizado em fogões residenciais para cozinhar alimentos.
 
+                            </p><p>Dimensões: 360 mm de diâmetro x 460 mm altura .</p>                
+                    </div>
+                    <div class="box_descricao">
+                        <p class="descrição" >O combustível para empilhadeiras industriais é comercializado em cilindros de 20 quilos. Esses cilindros são projetados para utilização na posição horizontal, já que todo o consumo se dá na fase líquida e não na de vapor, como acontece nos demais recipientes.
+
+                        </p><p>Dimensões: 309 mm de diâmetro x 885 mm de altura.</p>                
+                    </div>
+                    <div class="box_descricao">
+                        <p class="descrição" >O cilindro possui 45 quilos. Utilizado em larga escala e em diferentes situações e locais, como residências, comércio, bares, restaurantes, lavanderias, indústrias, hospitais e escolas, é instalado em centrais de abastecimento - sempre locais pré-determinados pelo cliente. De acordo com as normas estabelecidas.
+
+                        </p><p>Dimensões: 380 mm de diâmetro x 1280 mm de altura.</p>                
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h1 class="box_valor">69,98R$</h1>
+                    <h1 class="box_valor">128,0R$</h1>
+                    <h1 class="box_valor">289,0R$</h1>
+                </div>
+                <!-- QUANTIDADE -->
+                <form action="enviar123.php" method="post">
+                        <div class="box">
+                            <!-- PRODUTO1 -->
+                            <div class="col-1">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                                        <select onclick="atualiza()" name="p13" class="form-control custom-select-lg" id="produto1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <!-- PRODUTO2 -->
+                            <div class="col-1">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 ">QUANTIDADE</label>
+                                        <select onclick="atualiza()" name="p20" class="form-control custom-select-lg" id="produto2">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <!-- PRODUTO3 -->
+                            <div class="col-1">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">QUANTIDADE</label>
+                                        <select onclick="atualiza()" name="p45" class="form-control custom-select-lg" id="produto3">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+
+                                    <!-- TOTAL -->
+                            <div class="totalbox">
+                                <strong> TOTAL = </strong><div id="total"> <strong>0</strong></div> <strong>R$</strong> 
+                            </div>
+
+                    </div>
             
                     
                     <!-- form cadastro -->
@@ -216,16 +221,16 @@
                                 </div>
 
                             </div>
-                            <button type="submit" class="btn btn-primary">ENVIAR</button>
+                            <button type="submit" class="btn btn-primary btn-block">ENVIAR PEDIDO</button>
                         </form>
 
+                        
                     </div>
                 </form>   
             
                         <!-- Rodape -->
             <div class="rodape">
-                <p>...E em breve também na nos celulares. Estamos trabalhando duro no desenvolvimento.</p>
-                <p>@2020 semdominio.com | Designed by : Airton and Victoria</p> 
+                                <p>@2020 dominio.com | Designed by : Airton and Victoria</p> 
             </div>
         </div>
     </body>

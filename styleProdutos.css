@@ -1,22 +1,36 @@
 .tudo {
-    width: 1200px;
+    width: 90%;
     margin: auto;
     box-shadow: 7px 22px 66px -10px #000A4B;
 }
 
-.logo{
-    border-radius: 100%;
-    width: 200px;
-}
 
+.logo{
+	height: 180px;
+    width: 180px;
+
+}
 .header{
+	background-image: linear-gradient(180deg,#000,transparent);
     background-color: rgb(37, 67, 122);
-    height: 275px;
+    margin-top: 60px;
+    height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
     border-top:7px solid #250083;
-    border-bottom:7px solid #250083;
+    border-bottom:7px solid s#250083;
+}
+
+.popup{  
+    position: fixed;
+    height: 50px;
+    width: auto;
+    margin: auto;
+    top: 3px; left: 0; right: 0;
+    display: block;
+    padding: 15px;
+    background-color: rgba(157, 193, 235, 0.9);
+    border-radius: 20px;
 }
 
 ul {
@@ -25,7 +39,7 @@ ul {
 
 li {
     display: inline-block;
-    margin: 5px 0 5px 0;
+    margin: auto;
 }
 
 .menu-horizontal {
@@ -49,14 +63,20 @@ li {
 /*     border:4mm ridge rgba(255, 255, 255, 1); */
     border-right-style: none
 }
+.vitrine{
+    border: solid  black;
+}
 .produto_nome{
-    border:solid #250083;
-    background-color: antiquewhite;
+    width: 10%;
+    text-align: center;
+    border:solid 1px #000000;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .produto{
     background-color: rgba(255, 255, 255, 0.1);
-    border:solid #250083;
+ /*    border:solid #250083; */
     width: 20%;
     height: 20%;
     transition: 1s;
@@ -74,23 +94,51 @@ li {
 }
 
 .box_descricao{
-    border:solid #250083;
+    width: 30%;
+    text-align: center;
+    border:solid 1px #250083;
+
+}
+.box_valor{
+    background-color: #cecece;
+}
+
+.totalbox{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-end;
+    color: #000000;
+    background-color: #99afc9;
+    margin: 5px;
+    display: flex;
+    padding-right: 10px;
+}
+
+/* FORMULARIO */
+.formulario{
+    padding: 5px;
+    margin: 5px 15px 15px 15px;
+    border: solid rgb(119, 119, 119);
 }
 
 .rodape{
     display: flex;
     justify-content:space-around; 
-    margin-top: 20px;
     padding-top: 15px;
     width: auto;
     background-color: rgb(255, 255, 255);
-    border-top:5px solid #9170E4;
+    border-top:5px solid #3710ad;
 }
 
 
 
-/* FORMULARIO */
-.formulario{
-    margin: 5px 15px 15px 15px;
-    border-top: solid black;
+
+
+
+.linkadm{
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    position: fixed;
+    right: 0px;
 }

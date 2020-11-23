@@ -1,6 +1,7 @@
 .tudo {
     background-color: rgb(52, 153, 211);
-    width: auto;
+    width: 90%;
+    margin: auto;
     box-shadow: 7px 22px 66px -10px rgba(0,0,0,0.75);
 }
 
@@ -16,8 +17,8 @@
     background-size: contain; 
     height: 200px;
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: initial;
     border-top:7px solid #250083;
     border-bottom:7px solid s#250083;
 }
@@ -41,7 +42,7 @@ ul {
 
 li {
     display: inline-block;
-    margin: 50px 0 50px 0;
+    margin: auto;
 
    /*  border: 1px solid #333; */
     /* height: 100%; */
@@ -105,10 +106,16 @@ li {
     margin-top: 30px;
 }
 
+.boxtxt{
+    width: 35%;
+    background-color: rgb(78, 69, 69);
+}
 .txt{
+    text-align: center;
     margin-right: 50px;
     margin-top: 10px;
     color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -128,6 +135,9 @@ li {
     margin-top: 20px;
     padding-top: 15px;
     width: auto;
-    background-color: rgb(255, 255, 255);
-    border-top:5px solid #9170E4;
+    background-color: #ffffff;
+    border-top:5px solid #250083;
 }
+
+
+

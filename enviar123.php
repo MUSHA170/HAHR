@@ -1,13 +1,14 @@
 <?php
 
-    ///conexao com banco
-    try {
-        $pdo = new PDO("mysql:host=localhost;dbname=fullgas", "root", "");
-    } catch (PDOException $e) {
-        echo"Erro com banco de dados: ".$e->getMessage();
-    } catch(Exception $e){
-        echo"Erro Generico".$e->getMessage();
-    }
+  ///conexao com banco
+  try {
+    $pdo = new PDO("mysql:host=localhost;dbname=fullgas", "root", "");
+} catch (PDOException $e) {
+    echo"Erro com banco de dados: ".$e->getMessage();
+} catch(Exception $e){
+    echo"Erro Generico".$e->getMessage();
+}
+
 
 
     /* dados usuario */
@@ -26,9 +27,9 @@
     $quant_p45 = $_POST["p45"];
 
     /* add preço e pegar total*/
-    $preco_p13 = $quant_p13 * 60;
-    $preco_p20 = $quant_p20 * 70;
-    $preco_p45 = $quant_p45 * 80;
+    $preco_p13 = $quant_p13 * 69.98;
+    $preco_p20 = $quant_p20 * 128;
+    $preco_p45 = $quant_p45 * 289;
     $total = $preco_p13 + $preco_p20 + $preco_p45;
 
     /* pegar hora e data */
@@ -44,7 +45,7 @@
         /* verifica se o user escolheu pelo menos 1 produto */
         if ($total > 0) {
             /* enviar para o bd */ 
-            $enviar = $pdo->prepare("INSERT INTO pedidos(nome, email, cidade, estado, endereço, bairro,	numero,	telefone, p13, p20,	p45, total,	horas, dia	) VALUES 
+            $enviar = $pdo->prepare("INSERT INTO pedidos(nome, email, cidade, estado, endereço, bairro,	numero,	telefone, p13, p20,	p45, total,	horas, dia) VALUES 
             (:bvNome, :bvEmail, :bvCidade, :bvEstado, :bvEndereco, :bvBairro, :bvNumero, :bvTelefone, :bvP13, :bvP20, :bvP45, :bvTotal, :bvHora, :bvDia)" );
             $enviar->bindValue(":bvNome",$usuario_nome);
             $enviar->bindValue(":bvEmail",$usuario_email);
@@ -66,7 +67,7 @@
 
             $enviar->execute();
 
-            header ("Location: produtos.html");
+            echo("Seu pedido foi efetuado!");
             
         }else {
             echo("vc nao escolheu um produto");

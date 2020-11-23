@@ -2,15 +2,26 @@ create database fullgas;
 
 use fullgas;
 
-create table clientes(
-	id_cliente int auto_increment primary key,
+create table pedidos(
+	id int auto_increment primary key,
 	nome varchar(50),
 	email varchar(40),
-	senha varchar(32),
-	cidade varchar(30),
+    	cidade varchar(30),
 	estado varchar(2),
 	endereço varchar(50),
+   	bairro varchar(30),
 	numero int(10),
-	telefone int(30)
+	telefone int(30),
+  	p13 int(2),
+  	p20 int(2),
+   	p45 int(2),
+   	total float,
+   	horas int(20),
+  	dia int(20)
 	
 );
+u5zDij%gcYfqPRQr3aFM
+
+db name   fullgas   id15477053_fullgas
+user airtonmusha
+senha  hOvMjg8/C(S&]j_&   bd

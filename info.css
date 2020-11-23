@@ -1,4 +1,4 @@
-.tudo {
+tudo {
     width: 90%;
     margin: auto;
     box-shadow: 7px 22px 66px -10px #000A4B;
@@ -29,45 +29,25 @@ li {
     display: inline-block;
     margin: auto;
 }
-.lista{
-	text-align: center;
-}
 
-.titulo{
-	color: rgb(37, 67, 122);
-	text-align: center;
-}
 .corpo{
     width: auto;
     height: 500px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-	background-color: rgb(37, 67, 122);
 }
+
 .dicas{
-	width:auto;
-	height:300px;
-	background-color: white;
-	padding-top: 5px;
-	position: relative;
+    width: auto;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;	
+	background-color: rgb(37, 67, 122);
+	
+	
 }
 .botao{
     width: auto;
-	padding-bottom: 10px;
-    height: 150px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
 }
-
-.rodape{
-    display: flex;
-    justify-content:space-around;
-    padding-top: 15px;
-    width: auto;
-    background-color: rgb(255, 255, 255);
-    border-top:5px solid #3710ad;
-
-}
-

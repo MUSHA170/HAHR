@@ -41,17 +41,10 @@ li {
 }
 .corpo{
     width: auto;
-    height: 1300px;
     align-items: flex-end;
 	background-color: rgb(37, 67, 122);
 }
-.gas{
-	width:90%;
-	height:450px;
-	positon: relative;
-	background:  linear-gradient( -110grad, black, grey, transparent, transparent );
-	
-}
+
 .dicas{
 	width:auto;
 	height:820px;

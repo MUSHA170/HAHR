@@ -46,8 +46,9 @@ li {
 	background-color: rgb(37, 67, 122);
 }
 .gas{
-	width:1000px;
+	width:90%;
 	height:450px;
+	positon: relative;
 	background:  linear-gradient( -110grad, black, grey, transparent, transparent );
 	
 }
@@ -58,7 +59,7 @@ li {
 	position: relative;
 	margin-top:30px;
 }
-.redes{
+.redes img{
 	height:50px;
 	width:50px;
 	position: left;

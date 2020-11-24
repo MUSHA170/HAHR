@@ -4,7 +4,6 @@
     box-shadow: 7px 22px 66px -10px #000A4B;
 }
 
-
 .logo{
 	height: 180px;
     width: 180px;
@@ -13,14 +12,13 @@
 .header{
 	background-image: linear-gradient(180deg,#000,transparent);
     background-color: rgb(37, 67, 122);
-    margin-top: 60px;
+  
     height: 200px;
     display: flex;
     align-items: center;
     border-top:7px solid #250083;
     border-bottom:7px solid s#250083;
 }
-
 .popup{  
     position: fixed;
     height: 50px;
@@ -32,6 +30,7 @@
     background-color: rgba(157, 193, 235, 0.9);
     border-radius: 20px;
 }
+
 
 ul {
     text-align: center;
@@ -124,21 +123,9 @@ li {
 .rodape{
     display: flex;
     justify-content:space-around; 
+    margin-top: 20px;
     padding-top: 15px;
     width: auto;
-    background-color: rgb(255, 255, 255);
-    border-top:5px solid #3710ad;
-}
-
-
-
-
-
-
-.linkadm{
-    width: 120px;
-    height: 120px;
-    background-color: #000;
-    position: fixed;
-    right: 0px;
+    background-color: #ffffff;
+    border-top:5px solid #250083;
 }

@@ -20,8 +20,3 @@ create table pedidos(
   	dia int(20)
 	
 );
-u5zDij%gcYfqPRQr3aFM
-
-db name   fullgas   id15477053_fullgas
-user airtonmusha
-senha  hOvMjg8/C(S&]j_&   bd

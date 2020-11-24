@@ -1,5 +1,6 @@
 .tudo {
     width: 90%;
+	height: auto;
     margin: auto;
     box-shadow: 7px 22px 66px -10px #000A4B;
 }
@@ -40,16 +41,27 @@ li {
 }
 .corpo{
     width: auto;
-    height: 700px;
+    height: 1300px;
     align-items: flex-end;
 	background-color: rgb(37, 67, 122);
 }
+.gas{
+	width:1000px;
+	height:450px;
+	background:  linear-gradient( -110grad, black, grey, transparent, transparent );
+	
+}
 .dicas{
 	width:auto;
-	height:700px;
+	height:820px;
 	background-color: white;
 	position: relative;
 	margin-top:30px;
+}
+.redes{
+	height:50px;
+	width:50px;
+	position: left;
 }
 .botao{
     width: auto;
